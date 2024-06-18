@@ -1,0 +1,1217 @@
+{% load static %}
+{% include 'header.html' %}
+<link rel="stylesheet" href="style.css">
+
+<main>
+  <div class="main-wrapper">
+    <div class="carousel-wrapper">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators indicators">
+          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="{% static 'images/carousel-1.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="{% static 'images/carousel-2.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="{% static 'images/carousel-3.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div><!-- /.carousel-wrapper -->
+    <div class="product-wrapper">
+      <div class="container">
+        <div class="products-h-1">
+          <div  class="p-head" >
+            <h2>Ice Blast
+            </h2>
+          </div><!-- /.p-head -->
+          <div class="carousel-w2">
+            <div id="carouselInterval" class="carousel slide" data-bs-ride="carousel">
+
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                  <div class="row">
+                    <div class="col-md-4 mt-5">
+                      <div class="card">
+                        <div class="effect">
+                          <img onmouseenter="place()" onmouseleave="replace()" id="image"
+                            src="{% static 'images/product-1.jpeg' %}" class="card-img-top offer" alt="...">
+                          <div class="save">
+                            <p>Save 7%</p>
+                          </div>
+                        </div>
+                        <div class="card-body mt-3">
+                          <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                          <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                            Bundle + Lip Balm
+                          </p>
+                          <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                            <span class="disabled" aria-disabled="true"
+                              style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div><!-- /.col-md-4 -->
+
+                    <div class="col-md-4 mt-5">
+                      <div class="card">
+                        <div class="effect">
+                          <img onmouseenter="place2()" onmouseleave="replace2()" id="image2"
+                            src="{% static 'images/product-2.jpg' %}" class="card-img-top offer" alt="...">
+                          <div class="save">
+                            <p>Save 7%</p>
+                          </div>
+                        </div>
+
+                        <div class="card-body mt-3">
+                          <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                          <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                            Bundle + Lip Balm
+                          </p>
+                          <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                            <span class="disabled" aria-disabled="true"
+                              style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div><!-- /.col-md-4 -->
+
+                    <div class="col-md-4 mt-5">
+                      <div class="card">
+                        <div class="effect">
+                          <img onmouseenter="place3()" onmouseleave="replace3()" id="image3"
+                            src="{% static 'images/product-3.jpg' %}" class="card-img-top offer" alt="...">
+                          <div class="save">
+                            <p>Save 7%</p>
+                          </div>
+                        </div>
+                        <div class="card-body mt-3">
+                          <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                          <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                            Bundle + Lip Balm
+                          </p>
+                          <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                            <span class="disabled" aria-disabled="true"
+                              style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div><!-- /.col-md-4 -->
+                  </div><!-- /.row -->
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                  <div class="row">
+                    <div class="col-md-4 mt-5">
+                      <div class="card">
+                        <div class="effect">
+                          <img onmouseenter="place4()" onmouseleave="replace4()" id="image4"
+                            src="{% static 'images/product-4.webp' %}" class="card-img-top offer" alt="...">
+                          <div class="save">
+                            <p>Save 7%</p>
+                          </div>
+                        </div>
+                        <div class="card-body mt-3">
+                          <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                          <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                            Bundle + Lip Balm
+                          </p>
+                          <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                            <span class="disabled" aria-disabled="true"
+                              style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div><!-- /.col-md-4 -->
+
+                    <div class="col-md-4 mt-5">
+                      <div class="card">
+                        <div class="effect">
+                          <img onmouseenter="place5()" onmouseleave="replace5()" id="image5"
+                            src="{% static 'images/product-5.jpeg' %}" class="card-img-top offer" alt="...">
+                          <div class="save">
+                            <p>Save 7%</p>
+                          </div>
+                        </div>
+                        <div class="card-body mt-3">
+                          <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                          <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                            Bundle + Lip Balm
+                          </p>
+                          <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                            <span class="disabled" aria-disabled="true"
+                              style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div><!-- /.col-md-4 -->
+
+                    <div class="col-md-4 mt-5">
+                      <div class="card">
+                        <div class="effect">
+                          <img onmouseenter="place6()" onmouseleave="replace6()" id="image6"
+                            src="{% static 'images/product-6.jpeg' %}" class="card-img-top offer" alt="...">
+                          <div class="save">
+                            <p>Save 7%</p>
+                          </div>
+                        </div>
+
+                        <div class="card-body mt-3">
+                          <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                          <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                            Bundle + Lip Balm
+                          </p>
+                          <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                            <span class="disabled" aria-disabled="true"
+                              style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div><!-- /.col-md-4 -->
+                  </div><!-- /.row -->
+                </div>
+
+              </div>
+
+
+              <div class="carousel-indicators indicators pos">
+                <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+
+              </div>
+            </div>
+          </div><!-- /.carousel-w2 -->
+        </div><!-- /.products-h-1 -->
+      </div><!-- /.container -->
+    </div><!-- /.product-wrapper -->
+
+    <div class="product-wrapper2">
+      <div class="container">
+        <div class="product2-head products-h-1">
+          <h2>Summer Skin Saviour</h2>
+        </div><!-- /.product2-head -->
+        <div class="product2-inner">
+          <div id="carouselInterval2" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner ">
+              <div class="carousel-item active" data-bs-interval="4000">
+                <div class="row">
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img 
+                          src="{% static 'images/product-1.jpeg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img 
+                          src="{% static 'images/product-2.jpg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img
+                          src="{% static 'images/product-3.jpg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+                </div><!-- /.row -->
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <div class="row">
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img 
+                          src="{% static 'images/product-4.webp' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img 
+                          src="{% static 'images/product-5.jpeg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img
+                          src="{% static 'images/product-6.jpeg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+                </div><!-- /.row -->
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <div class="row">
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img 
+                          src="{% static 'images/product-4.webp' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img 
+                          src="{% static 'images/product-5.jpeg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img
+                          src="{% static 'images/product-6.jpeg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+                </div><!-- /.row -->
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <div class="row">
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img 
+                          src="{% static 'images/product-4.webp' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img 
+                          src="{% static 'images/product-5.jpeg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img
+                          src="{% static 'images/product-6.jpeg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+                </div><!-- /.row -->
+              </div>
+
+            </div>
+
+
+            <div class="carousel-indicators indicators pos">
+              <button type="button" data-bs-target="#carouselInterval2" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselInterval2" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselInterval2" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselInterval2" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+
+            </div>
+          </div>
+        </div><!-- /.product2-inner -->
+      </div><!-- /.container -->
+    </div><!-- /.product-wrapper2 -->
+    <div class="product-wrapper3">
+      <div class="container">
+        <div style="margin-top: 70px;" class="product2-head products-h-1">
+          <h2>World Cup Exclusive</h2>
+        </div><!-- /.product2-head -->
+        <div class="product3-inner">
+          <div id="carouselInterval3" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner ">
+              <div class="carousel-item active" data-bs-interval="4000">
+                <div class="row">
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img 
+                          src="{% static 'images/product-1.jpeg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img 
+                          src="{% static 'images/product-2.jpg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img
+                          src="{% static 'images/product-3.jpg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+                </div><!-- /.row -->
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <div class="row">
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img 
+                          src="{% static 'images/product-4.webp' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img 
+                          src="{% static 'images/product-5.jpeg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img
+                          src="{% static 'images/product-6.jpeg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+                </div><!-- /.row -->
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <div class="row">
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img 
+                          src="{% static 'images/product-4.webp' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img 
+                          src="{% static 'images/product-5.jpeg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+
+                  <div class="col-md-4 mt-5">
+                    <div class="card">
+                      <div class="effect">
+                        <img
+                          src="{% static 'images/product-6.jpeg' %}" class="card-img-top offer" alt="...">
+                        <div class="save">
+                          <p>Save 7%</p>
+                        </div>
+                      </div>
+
+                      <div class="card-body cent mt-3">
+                        <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                        <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                          Bundle + Lip Balm
+                        </p>
+                        <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                          <span class="disabled" aria-disabled="true"
+                            style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- /.col-md-4 -->
+                </div><!-- /.row -->
+              </div>
+             
+
+            </div>
+
+
+            <div class="carousel-indicators indicators pos">
+              <button type="button" data-bs-target="#carouselInterval3" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselInterval3" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselInterval3" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+
+            </div>
+          </div>
+        </div><!-- /.product2-inner -->
+      </div><!-- /.container -->
+    </div><!-- /.product-wrapper3 -->
+    
+
+    <div class="sales my-5">
+      <img style="width: 100%;" src="{% static 'images/sales.jpg' %}" alt="">
+    </div><!-- /.sales -->
+    <div class="product-wrapper4">
+      <div class="container">
+        <div id="carouselInterval4" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner ">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <div class="row">
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img 
+                        src="{% static 'images/product-1.jpeg' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img 
+                        src="{% static 'images/product-2.jpg' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img
+                        src="{% static 'images/product-3.jpg' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img 
+                        src="{% static 'images/product-4.webp' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+              </div><!-- /.row -->
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <div class="row">
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img 
+                        src="{% static 'images/product-1.jpeg' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img 
+                        src="{% static 'images/product-2.jpg' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img
+                        src="{% static 'images/product-3.jpg' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img 
+                        src="{% static 'images/product-4.webp' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+              </div><!-- /.row -->
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <div class="row">
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img 
+                        src="{% static 'images/product-1.jpeg' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img 
+                        src="{% static 'images/product-2.jpg' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img
+                        src="{% static 'images/product-3.jpg' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img 
+                        src="{% static 'images/product-4.webp' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+              </div><!-- /.row -->
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <div class="row">
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img 
+                        src="{% static 'images/product-1.jpeg' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img 
+                        src="{% static 'images/product-2.jpg' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img
+                        src="{% static 'images/product-3.jpg' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-3 mt-5">
+                  <div class="card">
+                    <div class="effect">
+                      <img 
+                        src="{% static 'images/product-4.webp' %}" class="card-img-top offer" alt="...">
+                      <div class="save">
+                        <p>Save 7%</p>
+                      </div>
+                    </div>
+                    <div class="card-body cent mt-3">
+                      <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                      <p class="card-text mt-3" style="margin-bottom: 0px !important;">Bundle: Charcoal Monthly
+                        Bundle + Lip Balm
+                      </p>
+                      <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">Rs.5,014.00
+                        <span class="disabled" aria-disabled="true"
+                          style="text-decoration: line-through; color: #8B8C8D;">Rs.5,194.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- /.col-md-4 -->
+              </div><!-- /.row -->
+            </div>
+
+          </div>
+
+
+          <div class="carousel-indicators indicators pos">
+            <button type="button" data-bs-target="#carouselInterval4" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselInterval4" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselInterval4" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselInterval4" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+
+          </div>
+        </div>
+      </div><!-- /.container -->
+    </div><!-- /.product-wrapper4 -->
+    <div class="celb-fav">
+      <div style=" margin-top: 70px;" class="product2-head products-h-1">
+        <h2>CELEBRITY FAVOURITES</h2>
+      </div><!-- /.product2-head -->
+      <div class="celb-inner">
+       <div class="container">
+        <div class="row">
+          <div class="col-md-3 mt-5">
+            <a href="https://youtu.be/vVw89UjmGkU?si=RS-4fvyg7asyBezL"><img style="width: 100%;" src="{% static 'images/cb-1.png' %}" alt=""></a>
+          </div><!-- /.col-md-3 -->
+          <div class="col-md-3 mt-5">
+            <a href="https://youtu.be/vVw89UjmGkU?si=CDF-lDwdqsjxq3hx"><img style="width: 100%;" src="{% static 'images/cb-2.png' %}" alt=""></a>
+          </div><!-- /.col-md-3 -->
+          <div class="col-md-3 mt-5">
+            <a href="https://youtu.be/vVw89UjmGkU?si=RS-4fvyg7asyBezL"><img style="width: 100%;" src="{% static 'images/cb-1.png' %}" alt=""></a>
+          </div><!-- /.col-md-3 -->
+          <div class="col-md-3 mt-5">
+            <a href="https://youtu.be/vVw89UjmGkU?si=CDF-lDwdqsjxq3hx"><img style="width: 100%;" src="{% static 'images/cb-2.png' %}" alt=""></a>
+          </div><!-- /.col-md-3 -->
+        </div><!-- /.row -->
+       </div><!-- /.container -->
+      </div><!-- /.celb-inner -->
+    </div> <!-- /.celb-fav -->
+    <div class="happy-costumers">
+     <div class="container">
+      <div style=" margin-top: 70px; margin-bottom: 70px;" class="product2-head products-h-1">
+        <h2>Happy Customers</h2>
+      </div><!-- /.product2-head -->
+      <div class="happy-product-inner">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-12 my-3">
+            <img  src="{% static 'images/partner-1.jpeg' %}" alt="">
+          </div><!-- /.col-md-3 -->
+          <div class="col-lg-3 col-md-4 col-sm-12 my-3">
+            <img  src="{% static 'images/partner-2.jpeg' %}" alt="">
+          </div><!-- /.col-md-3 -->
+          <div class="col-lg-3 col-md-4 col-sm-12 my-3">
+            <img  src="{% static 'images/partner-3.jpeg' %}" alt="">
+          </div><!-- /.col-md-3 -->
+          <div class="col-lg-3 col-md-4 col-sm-12 my-3">
+            <img  src="{% static 'images/partner-4.jpeg' %}" alt="">
+          </div><!-- /.col-md-3 -->
+          <div class="col-lg-3 col-md-4 col-sm-12 my-3">
+            <img  src="{% static 'images/partner-2.jpeg' %}" alt="">
+          </div><!-- /.col-md-3 -->
+          <div class="col-lg-3 col-md-4 col-sm-12 my-3">
+            <img  src="{% static 'images/partner-4.jpeg' %}" alt="">
+          </div><!-- /.col-md-3 -->
+          <div class="col-lg-3 col-md-4 col-sm-12 my-3">
+            <img  src="{% static 'images/partner-1.jpeg' %}" alt="">
+          </div><!-- /.col-md-3 -->
+          <div class="col-lg-3 col-md-4 col-sm-12 my-3">
+            <img  src="{% static 'images/partner-3.jpeg' %}" alt="">
+          </div><!-- /.col-md-3 -->
+        </div><!-- /.row -->
+      </div><!-- /.happy-product-inner -->
+     </div><!-- /.container -->
+    </div><!-- /.happy-costumers -->
+    <div class="newsletter">
+      <div class="container nl-inner">
+         <h4 class="mb-4">Newsletter</h4>
+         <div class="form-n">
+          <form class="d-flex">
+            <input class="mail" type="email" placeholder="abc@example.com" required>
+            <input class="submit" type="submit" value="Subscribe">
+          </form>
+         </div><!-- /.form-n -->
+      </div><!-- /.container -->
+    </div><!-- /.newsletter -->
+  </div><!-- /.main-wrapper -->
+</main>
+
+{% include 'footer.html' %}
