@@ -251,3 +251,6 @@ body {
 .owl-item{
     width: 333px;
 }
+.form-control{
+    border-radius: 0px !important;
+}
