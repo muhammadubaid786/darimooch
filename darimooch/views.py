@@ -11,11 +11,27 @@ def home(request) :
     }
     return render(request , 'index.html' , data)
 def contact(request) :
-    name = request.GET.get('fullname')
-    email = request.GET.get('email')
-    phone = request.GET.get('phone')
-    message = request.GET.get('message')
-
-    contacts = Contact(fullname = name , email = email , phone = phone , message = message)
-    contacts.save()
     return render(request , 'contact.html')
+def contact_save(request) :
+    try :
+        name = request.POST.get('fullname')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        message = request.POST.get('message')
+
+        if name == '' or email == '' or phone == '' or message == '' :
+            return render(request , 'contact.html')
+        contacts = Contact(fullname = name , email = email , phone = phone , message = message)
+        contacts.save()
+    except : 
+        print('error')
+    return render(request , 'contact.html')
+    
+def searchResult(request) :
+    searchTerm = request.GET['search']
+    searchitem = Products.objects.filter(Title__icontains = searchTerm)
+    data = {
+        "products" : searchitem,
+    }
+
+    return render(request , 'search.html' , data)

@@ -20,10 +20,11 @@
               <div style="display: flex; justify-content: space-between; align-items: center;" class="nav-bar-top">
                 <div></div>
                   <img class="logo" src="{% static 'images/dm-logo.png' %}" alt="">
-                  <div class="top">
+                  <div class="top d-flex">
+                    <form method="get" action="{% url 'search' %}"><input type="search" name="search" id=""> <button  type="submit"  style="border: 0; border-radius: 4px; padding: 4px; background-color: aqua; color: black;text-decoration: none;" href="">search</button></form>
                     <i style="margin-right: 12px; font-size: 18px;" class="bi bi-person"></i>
                     <i style="margin-right: 12px; font-size: 18px;" class="bi bi-bag"></i>
-                    <i style="margin-right: 12px; font-size: 18px;" class="bi bi-search"></i>
+                    
                   </div><!-- /.top -->
               </div><!-- /.nav-bar-top -->
             </div><!-- /.container -->

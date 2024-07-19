@@ -1,25 +1,31 @@
 {% load static %}
 {% include 'header.html' %}
 
-<main class="inner">
-<div class="form-wrapper py-5 d-flex justify-content-center">
-    <form class="row g-3">
-        
+<main class="inner py-5">
+  {% if request.POST.fullname == ''  or request.POST.email == '' or request.POST.phone == '' or request.POST.message == '' %}
+  <div class=" container py-4">
+    please provide missing fields
+  </div>
+  {% endif %}
+<div class="form-wrapper  d-flex justify-content-center">
+    <form method="post" action="{% url 'contact_save' %}" class="row g-3">
+        {% csrf_token %}
         <div class="col-md-6">
           <label for="name" class="form-label">Name</label>
-          <input type="text" name="fullname" class="form-control" id="name">
+          <input type="text" name="fullname" class="form-control" id="name" value="{{ request.POST.fullname }}">
         </div>
+        
         <div class="col-md-6">
           <label for="email" class="form-label">Email</label>
-          <input type="email" name="email" class="form-control" id="email">
+          <input type="email" name="email" class="form-control" id="email" value="{{ request.POST.email }}">
         </div>
         <div class="">
           <label for="phone" class="form-label">Phone</label>
-          <input type="text" name="phone" class="form-control" id="phone">
+          <input type="text" name="phone" class="form-control" id="phone" value="{{ request.POST.phone }}">
         </div>
         <div class="">
           <label for="message" class="form-label">Message</label>
-          <textarea type="text" name="message" rows="9" class="form-control" id="message"></textarea>
+          <textarea type="text" name="message" rows="9" class="form-control" id="message" value="{{ request.POST.message }}"></textarea>
         </div>
        
        

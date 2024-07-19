@@ -1,0 +1,41 @@
+{% load static %}
+{% include 'header.html' %}
+
+
+<main style="margin-top: 16%;">
+    <div class="container d-flex justify-content-center">
+        <h3>
+            Your Search Results
+        </h3>
+    </div>
+        <div class="container-fluid">
+            <div class="row">
+            
+                {% for product in products %}
+                <div class="col-md-3">
+                          <div class="card">
+                            
+                              <img src=/media/{{product.image}} class="card-img-top offer" alt="...">
+                            
+                            <div class="card-body cent mt-3">
+                              <a href="#" class="btn btn-primary buttons">Add to cart</a>
+                              <p class="card-text mt-3" style="margin-bottom: 0px !important;">{{product.Title}}
+                              </p>
+                              <p class="card-text mt-3" style="color: #CC4E50; margin-top: 2px !important;">PKR :- {{product.price}}.00
+                                
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                {% endfor %}
+            
+        </div>
+        </div>
+    
+</main>
+
+
+
+
+
+{% include 'footer.html' %}
