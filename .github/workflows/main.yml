@@ -1,8 +1,7 @@
 on: 
-  push :
+  push:
     branches:
-      - main
-
+        -main
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -16,5 +15,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: nullxcoder.xyz
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
