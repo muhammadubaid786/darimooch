@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ev-lj-oif^7_pc-8%gbbpo6p-v7-gbelti(b_jl@qgkv=!z#u%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nullxcoder.xyz/dmooch' 'nullxcoder.xyz']
 
 
 # Application definition
@@ -80,12 +80,21 @@ DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
+        # --------------------------------------------
+        # 'ENGINE': 'django.db.backends.mysql',
+        # 'NAME' : 'dm_project',
+        # 'HOST' : 'localhost',
+        # 'DATABASE' : 'dm_project',
+        # 'USER' : 'root',
+        # 'PASSWORD' : '',
+        # 'PORT' : '3306'
+        #---------------------------------------------
         'ENGINE': 'django.db.backends.mysql',
-        'NAME' : 'dm_project',
+        'NAME' : 'nullxcod_dmooch',
         'HOST' : 'localhost',
-        'DATABASE' : 'dm_project',
-        'USER' : 'root',
-        'PASSWORD' : '',
+        'DATABASE' : 'nullxcod_dmooch',
+        'USER' : 'nullxcod_dmooch_admin',
+        'PASSWORD' : 'Ubaid123@#',
         'PORT' : '3306'
     }
 }
